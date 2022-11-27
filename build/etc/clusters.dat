@@ -1,0 +1,1 @@
+[{"functionUrl":"http://10.177.97.15:6750","name":"pulsar-cluster-dev","prestoUrl":"http://10.177.97.15:8081","serviceUrl":"http://10.177.83.226:8080"},{"functionUrl":"","name":"pulsar-cluster-sit","prestoUrl":"","serviceUrl":"http://10.177.97.154:8080"}]
