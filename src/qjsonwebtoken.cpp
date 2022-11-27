@@ -2,7 +2,7 @@
 
 #include <QVariantMap>
 #include <QJsonDocument>
-#include <QtCrypto>
+#include <QtCrypto/QtCrypto>
 
 #include <log4qt/logger.h>
 

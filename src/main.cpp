@@ -3,7 +3,7 @@
 #include <QApplication>
 #include <QDir>
 
-#include <QtCrypto>
+#include <QtCrypto/QtCrypto>
 #include <log4qt/propertyconfigurator.h>
 #include <log4qt/logger.h>
 
