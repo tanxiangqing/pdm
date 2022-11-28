@@ -137,6 +137,10 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
+win32{
+    RC_ICONS = $$PWD/resource/icons/lakala.ico
+}
+
 unix:macx { # OSX
     TARGET = "PDM"
     ICON = $$PWD/resource/icons/logo.icns
