@@ -14,6 +14,7 @@
 #include <QScreen>
 #include <QMessageBox>
 #include <QDebug>
+#include <QDir>
 
 #include "../constants.h"
 
@@ -33,6 +34,8 @@
 MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), mdiMain(new QMdiArea(this)), treeTenants(new QTreeWidget(this)), treeClusters(new QTreeWidget(this)), tlbTenantToolbar(new QToolBar(this)),
     tlbClusterToolbar(new QToolBar(this)), m_ClusterService(new ClusterService(this)), m_TenantService(new TenantService(this)), m_NamespaceService(new NamespaceService(this))
 {
+    //QDir basePath(QCoreApplication::applicationDirPath());
+    //QMessageBox::critical(this, tr("Error"), basePath.absolutePath());
     readSettings();
     createActions();
     createStatusBar();

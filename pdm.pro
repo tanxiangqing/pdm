@@ -146,6 +146,12 @@ unix:macx { # OSX
     ICON = $$PWD/resource/icons/logo.icns
     CONFIG += sdk_no_version_check
 
+    CONFIG(release, debug|release) {
+        QMAKE_RPATHDIR += @executable_path/../Frameworks
+        QMAKE_RPATHDIR += @loader_path/../Frameworks
+    }
+
+
     #include($$PWD/libs/avro/avro.pri)
 
     #SOURCES += \
