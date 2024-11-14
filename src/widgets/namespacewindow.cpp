@@ -31,7 +31,7 @@ NamespaceWindow::NamespaceWindow(QWidget* parent) : QDialog(parent), m_Namespace
     formLayout->addRow(tr(""), this->cbActions);
 
     QHBoxLayout* buttonLayout = new QHBoxLayout;
-#ifdef Q_OS_MACX
+#ifdef Q_OS_MACOS
     this->btnOk = new QPushButton(tr("&Save"));
     this->btnCancel = new QPushButton(tr("&Don't Save"));
 #else

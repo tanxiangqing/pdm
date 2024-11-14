@@ -50,7 +50,6 @@ LastCommitMessageWindow::LastCommitMessageWindow(QWidget* _parent) : QDialog(_pa
     formLayout->addRow(new QLabel("Messages:"));
     formLayout->addRow(this->twMessages);
 
-
     QTabWidget* tabs = new QTabWidget();
 
     this->teProperties = new QTextEdit();
@@ -84,7 +83,7 @@ LastCommitMessageWindow::LastCommitMessageWindow(QWidget* _parent) : QDialog(_pa
     formLayout->addRow(tabs);
 
     QHBoxLayout* buttonLayout = new QHBoxLayout;
-#ifdef Q_OS_MACX
+#ifdef Q_OS_MACOS
     this->btnGet = new QPushButton(tr("&Get it"));
     QPushButton* btnCancel = new QPushButton(tr("&Close"));
 #else

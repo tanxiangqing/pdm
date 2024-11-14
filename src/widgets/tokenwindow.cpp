@@ -49,7 +49,7 @@ TokenWindow::TokenWindow(QWidget* parent) : QDialog(parent), twTable(new QTableW
 
     QHBoxLayout* btnLayout = new QHBoxLayout;
     this->btnGenerateKey = new QPushButton(tr("&Generate Key..."));
-#ifdef Q_OS_MACX
+#ifdef Q_OS_MACOS
     this->btnOk = new QPushButton(tr("&Yes"));
     this->btnCancel = new QPushButton(tr("&No"));
 #else
@@ -96,7 +96,6 @@ TokenWindow::TokenWindow(QWidget* parent) : QDialog(parent), twTable(new QTableW
     this->meuPopupMenu->addAction(this->actCopyCellText);
     connect(this->actDelete, &QAction::triggered, this, &TokenWindow::handleDeleteToken);
     connect(this->actCopyCellText, &QAction::triggered, this, &TokenWindow::handleCopyCellText);
-
 
     initialize();
 }

@@ -54,7 +54,7 @@ QueryTopicDataWindow::QueryTopicDataWindow(QWidget* parent) : QDialog(parent), t
     formLayout->addRow(this->lblStatus);
 
     QHBoxLayout* buttonLayout = new QHBoxLayout;
-#ifdef Q_OS_MACX
+#ifdef Q_OS_MACOS
     this->btnQuery = new QPushButton(tr("&Query"));
     QPushButton* btnCancel = new QPushButton(tr("&Close"));
 #else

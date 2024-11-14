@@ -19,7 +19,7 @@ SubscriptionWindow::SubscriptionWindow(QWidget* parent) : QDialog(parent), m_Top
     formLayout->addRow(tr("&Subscription Name:"), this->tbName);
 
     QHBoxLayout* buttonLayout = new QHBoxLayout;
-#ifdef Q_OS_MACX
+#ifdef Q_OS_MACOS
     this->btnOk = new QPushButton(tr("&Save"));
     this->btnCancel = new QPushButton(tr("&Don't Save"));
 #else

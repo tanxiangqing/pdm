@@ -4,6 +4,7 @@
 #include <QDir>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QJsonArray>
 #include <QVariantList>
 
 #include <log4qt/logger.h>

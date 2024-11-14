@@ -17,4 +17,4 @@ unix:macx{
 win32:CONFIG(release, debug|release):LIBS += -L$${QCA_WIN32_ROOT}/lib -lqca
 else:win32:CONFIG(debug, debug|release):LIBS += -L$${QCA_WIN32_ROOT}/lib -lqcad
 else:unix:!macx:LIBS += -L$${QCA_UNIX_ROOT}/lib -lqca
-else:unix:macx:LIBS += -F$${LOG4QT_MACX_ROOT}/lib -framework qca
+else:unix:macx:LIBS += -framework qca-qt6

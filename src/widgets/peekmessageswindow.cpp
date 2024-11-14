@@ -84,7 +84,7 @@ PeekMessagesWindow::PeekMessagesWindow(QWidget* parent) : QDialog(parent), m_Top
     layout->addWidget(tabs);
 
     QHBoxLayout* buttonLayout = new QHBoxLayout;
-#ifdef Q_OS_MACX
+#ifdef Q_OS_MACOS
     QPushButton* btnCancel = new QPushButton(tr("&Close"));
 #else
     const QIcon cancelIcon = QIcon::fromTheme("window-close", QIcon(":/cancel"));

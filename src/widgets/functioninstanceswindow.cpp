@@ -27,7 +27,7 @@ FunctionInstancesWindow::FunctionInstancesWindow(QWidget* parent) : QDialog(pare
     layout->addWidget(this->twInstances);
 
     QHBoxLayout* btnLayout = new QHBoxLayout;
-#ifdef Q_OS_MACX
+#ifdef Q_OS_MACOS
     QPushButton* btnCancel = new QPushButton(tr("&Close"));
 #else
     const QIcon cancelIcon = QIcon::fromTheme("window-close", QIcon(":/cancel"));

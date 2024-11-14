@@ -67,7 +67,6 @@ TopicOverviewWindow::TopicOverviewWindow(QWidget* parent) : QDialog(parent), m_T
     this->twSubscriptions->setContextMenuPolicy(Qt::CustomContextMenu);
     layout->addWidget(this->twSubscriptions);
 
-
     layout->addWidget(new QLabel(tr("Consumers:")));
     header.clear();
     header << tr("Consumer Name") << tr("Out Rate") << tr("Out Throughout") << tr("Avg Msg Size") << tr("Address") << tr("Since");
@@ -84,7 +83,7 @@ TopicOverviewWindow::TopicOverviewWindow(QWidget* parent) : QDialog(parent), m_T
     layout->addWidget(this->twConsumers);
 
     QHBoxLayout* buttonLayout = new QHBoxLayout;
-#ifdef Q_OS_MACX
+#ifdef Q_OS_MACOS
     QPushButton* btnCancel = new QPushButton(tr("&Close"));
 #else
     const QIcon cancelIcon = QIcon::fromTheme("window-close", QIcon(":/cancel"));
@@ -378,4 +377,3 @@ void TopicOverviewWindow::handleDeleteSubscription(bool)
         }
     }
 }
-

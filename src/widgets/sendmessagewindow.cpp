@@ -34,7 +34,7 @@ SendMessageWindow::SendMessageWindow(QWidget* _parent): QDialog(_parent), m_Clus
     formLayout->addRow(tr("&Message Body:"), teMessage);
 
     QHBoxLayout* buttonLayout = new QHBoxLayout;
-#ifdef Q_OS_MACX
+#ifdef Q_OS_MACOS
     this->btnGet = new QPushButton(tr("&Send"));
     QPushButton* btnCancel = new QPushButton(tr("&Close"));
 #else

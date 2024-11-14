@@ -38,7 +38,7 @@ BaseInputWindow::BaseInputWindow(QWidget* parent) : QDialog(parent), twConfigure
     this->twConfigure->setContextMenuPolicy(Qt::CustomContextMenu);
     this->twConfigure->setHidden(true);
 
-#ifdef Q_OS_MACX
+#ifdef Q_OS_MACOS
     this->btnOk = new QPushButton(tr("&Save"));
     this->btnCancel = new QPushButton(tr("&Don't Save"));
 #else
